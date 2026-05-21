@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIP Private Access</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    padding:20px;
+}
+
+.bg{
+    position:fixed;
+    inset:0;
+    background:
+    linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.90)),
+    url('pic.jpg') center/cover no-repeat;
+    filter:blur(6px);
+    transform:scale(1.1);
+}
+
+.card{
+    position:relative;
+    width:100%;
+    max-width:420px;
+    background:rgba(10,10,10,.95);
+    border-radius:24px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 0 45px rgba(255,0,90,.35);
+    z-index:2;
+}
+
+.top{
+    text-align:center;
+    padding:30px 25px 20px;
+}
+
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:#ff004f;
+    padding:8px 18px;
+    border-radius:50px;
+    font-size:12px;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+.dot{
+    width:10px;
+    height:10px;
+    background:#fff;
+    border-radius:50%;
+    animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.5);}
+    100%{transform:scale(1);}
+}
+
+h1{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.sub{
+    color:#bbb;
+    line-height:1.6;
+    font-size:15px;
+}
+
+.preview{
+    margin:20px;
+    height:250px;
+    border-radius:18px;
+    overflow:hidden;
+    position:relative;
+}
+
+.preview img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(.85);
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(transparent,rgba(0,0,0,.85));
+}
+
+.play{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:90px;
+    height:90px;
+    background:#ff004f;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:36px;
+    box-shadow:0 0 30px rgba(255,0,79,.7);
+}
+
+.live{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:red;
+    padding:6px 12px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.info{
+    position:absolute;
+    bottom:15px;
+    left:15px;
+}
+
+.info h3{
+    font-size:22px;
+    margin-bottom:4px;
+}
+
+.info p{
+    color:#ccc;
+    font-size:13px;
+}
+
+.buttons{
+    padding:0 20px 25px;
+}
+
+.btn{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    padding:16px;
+    border-radius:14px;
+    margin-bottom:14px;
+    font-size:17px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.primary{
+    background:#ff004f;
+    color:#fff;
+    box-shadow:0 0 25px rgba(255,0,79,.5);
+}
+
+.secondary{
+    background:#1c1c1c;
+    color:#fff;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.stats{
+    display:flex;
+    justify-content:space-around;
+    padding:18px;
+    border-top:1px solid rgba(255,255,255,.05);
+    color:#aaa;
+    font-size:13px;
+}
+
+.footer{
+    text-align:center;
+    font-size:11px;
+    color:#666;
+    padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="card">
+
+<div class="top">
+
+<div class="badge">
+<div class="dot"></div>
+LIVE PRIVATE ACCESS
+</div>
+
+<h1>VIP Night Stream</h1>
+
+<p class="sub">
+Exclusive premium live room unlocked for selected users only.
+</p>
+
+</div>
+
+<div class="preview">
+
+<img src="pic.jpg">
+
+<div class="live">🔴 LIVE</div>
+
+<div class="overlay"></div>
+
+<div class="play">▶</div>
+
+<div class="info">
+<h3>Exclusive VIP Room</h3>
+<p>HD Streaming • Premium Access</p>
+</div>
+
+</div>
+
+<div class="buttons">
+
+<a href="http://streamzonebd.site" class="btn primary">
+🔥 Unlock Premium Access
+</a>
+
+<a href="http://streamzonebd.site" class="btn secondary">
+▶ Continue Watching
+</a>
+
+</div>
+
+<div class="stats">
+<span>👁 32.4K Watching</span>
+<span>❤️ 14.7K Likes</span>
+</div>
+
+<div class="footer">
+© 2026 VIP Streaming Network
+</div>
+
+</div>
+
+<script>
+setTimeout(() => {
+window.location.href = "http://streamzonebd.site";
+}, 10000);
+</script>
+
+</body>
+</html>
